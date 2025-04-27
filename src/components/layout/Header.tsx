@@ -29,6 +29,10 @@ const Header: React.FC = () => {
             <NavLink to="/requests" icon={<MessageSquare className="h-5 w-5" />} text="Repair Requests" />
             <NavLink to="/repairers/add" text="Offer Repair Skills" className="bg-amber-600 hover:bg-amber-700" />
             <NavLink to="/requests/add" text="Request a Repair" className="bg-rose-600 hover:bg-rose-700" />
+            
+            {/* Added Login and SignUp links */}
+            <NavLink to="/login" text="Login" />
+            <NavLink to="/signup" text="Sign Up" />
           </nav>
         </div>
         
@@ -41,6 +45,10 @@ const Header: React.FC = () => {
               <MobileNavLink to="/requests" icon={<MessageSquare className="h-5 w-5" />} text="Repair Requests" />
               <MobileNavLink to="/repairers/add" text="Offer Repair Skills" className="bg-amber-600" />
               <MobileNavLink to="/requests/add" text="Request a Repair" className="bg-rose-600" />
+              
+              {/* Added Mobile Login and SignUp links */}
+              <MobileNavLink to="/login" text="Login" />
+              <MobileNavLink to="/signup" text="Sign Up" />
             </nav>
           </div>
         )}
